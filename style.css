@@ -1,0 +1,440 @@
+* {
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Stylish', sans-serif;
+    /* font-family: 'Stylish', 'Raleway',sans-serif; */
+    list-style: none;
+    
+}
+
+ul {
+    padding-left: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#not-provide {
+    /* 존재는하지만 화면에표시x */
+    display: none;
+    /* 화면에표시x 공간은남아있음*/
+    /* visibility: hidden; */
+}
+
+@media (max-width:575px){
+    header,
+    main,
+    article,
+    footer{
+        display:none !important;
+    }
+    #not-provide{
+        display: block;
+    }
+}
+
+/* header */
+
+header > nav > .icon-container{
+    margin-left: 12rem;
+}
+
+header > nav > .navbar-nav{
+    margin-right: 12rem;
+}
+header > nav {
+    background-color: white;
+}
+
+header .icon-container span{
+    font-size: 3rem;
+}
+header ul{
+    font-size: 2.4rem;
+}
+
+@media(max-width:992px){
+    header > nav > .icon-container{
+        margin-left: 6rem;
+    }
+    header > nav > .navbar-nav{
+        margin-right: 6rem;
+    }
+}
+#my-intro,
+#frontpage{
+    padding-top: 3rem;
+}
+
+#frontpage > .title-container>h2,
+.info-text-container.top-text,
+.info-text-container.icon-container,
+#my-intro > div > section.info-text-container > h2,
+#my-intro > div > section.info-text-container > ul > li > div.icon-container,
+#skills .card-header
+{
+    color:palegreen;
+}
+#frontpage > .title-container>a>.btn,
+#skills,
+#contact .icon-container{
+    background-color: palegreen;
+}
+#frontpage > .title-container>h3,
+section.info-text-container > h3,
+section.info-text-container > div > h2,
+section.info-text-container > div{
+    color: rgb(72,202,84);
+}
+#frontpage > .title-container>ul,
+#my-intro .info-text-container .column-data
+{
+    color: rgb(0,79,0,0.6);
+}
+h2,
+h3,
+header,
+#my-intro .info-text-container .column-data,
+#my-intro .info-text-container .column-name{
+    font-weight: bold;
+    font-style: italic;
+}
+#frontpage{
+    background-color: white;
+    display: flex;
+    height: 100vh;
+}
+#frontpage> .title-container{
+    flex:1;
+    padding-left: 7rem;
+    padding-top: 7rem;
+    padding-right: 5rem;
+}
+.frontpage-img-container {
+    flex:3;
+    background-image: linear-gradient(to left,transparent, white),url('./img/computer-ga3860cdcb_1920.jpg');
+    background-size: cover;
+
+}
+#frontpage >nav{
+    width: 100px;
+}
+#frontpage >nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+
+}
+
+#frontpage>nav li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#frontpage>nav .github-icon{
+    height: 50px;
+    width: 50px;
+}
+#frontpage>nav .insta-icon{
+    height: 50px;
+    width: 50px;
+}
+#frontpage>nav .twitter-icon{
+    height: 50px;
+    width: 50px;
+}
+
+#frontpage>nav .title-container{
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
+
+#frontpage>.title-container>h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#frontpage>.title-container>ul{
+    margin-bottom: 30px;
+}
+#frontpage>.title-container button{
+    margin-right: 20px;
+    border-radius: 20px;
+    columns: white;
+}
+
+
+@media(max-width:992px){
+    #frontpage>nav li{
+        display: none;
+    }
+    #frontpage>.title-container{
+        padding-left: 1rem;
+        padding-top: 8rem;
+    }
+    #frontpage h2{
+        font-size: 2rem;
+    }
+    #frontpage h3{
+        font-size: 3rem;
+    }
+    #frontpage ul{
+        font-size: 1.5rem;
+    }   
+}
+
+#my-intro{
+    display: flex;
+    align-items: center;
+}
+
+#my-intro > .my-intro-layout-parent{
+    display: flex;
+    margin-bottom: 120px;
+}
+
+#my-intro .profile-img-container{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-intro .info-text-container{
+    flex:2;
+    padding-left:50px;
+}
+#my-intro .profile-img{
+    height: 36rem;
+    width: 23rem;
+    background-image: url('./img/profile.jpg');
+    background-size: cover;
+}
+#my-intro .info-text-container .top-text{
+    margin-bottom:40px;
+}
+
+
+@media(max-width:992px){
+    #my-intro .info-text-container .top-text{
+       margin-top: 80px;
+    }
+}
+
+#my-intro .info-text-container h3{
+    margin-bottom:20px;
+}
+
+#my-intro .info-text-container p{
+    margin-bottom:30px;
+}
+
+#my-intro .info-text-container > .contact-info-ul{
+    height: 200px;
+    display: flex;
+    margin-bottom:40px;
+    flex-direction: column;
+}
+
+#my-intro .my-interests-container > h2{
+    margin-bottom:20px;
+}
+
+#my-intro .my-interests-container > ul{
+    display: flex;
+}
+
+#my-intro .my-interests-container li{
+    margin-right: 4rem;
+    width:2rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+#my-intro .contact-info-ul .row{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#my-intro .contact-info-ul .icon-container{
+    flex:1
+}
+#my-intro .contact-info-ul .column-name{
+    flex:4
+}
+#my-intro .contact-info-ul .column-data{
+    flex:5
+}
+/* skills */
+#skills > ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#skills > h2{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#skills .card {
+    width: 20rem;
+    margin-bottom: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#skills .card-header{
+    font-size: 1.5rem;
+}
+#skills ul img{
+    height: 4rem;
+    margin-top: 10px;
+}
+
+/* project */
+#project h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#project > .edu-project-container{
+    display: flex;
+}
+#project .edu-container{
+    flex: 2;
+}
+#project .project-container{
+    flex: 1;
+}
+@media(max-width:992px){
+    #project > .edu-project-container{
+        flex-direction: column;
+    }
+}
+#project > .edu-project-container h3{
+    display: flex;
+    align-items: center;
+}
+#project > .edu-project-container h3 .material-symbols-outlined{
+    font-size: 3rem;
+    margin-right: 20px;
+}
+#project .date{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+#project .date-data{
+    margin-left: 20px;
+}
+#project li{
+    border-left: 5px solid palegreen;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+/* contact */
+#contact{
+    margin-bottom: 80px;
+}
+
+#contact  h2,
+#contact h3{
+    text-align: center;
+}
+#contact h2{
+    font-size: 2rem;
+}
+#contact h3{
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+#contact .contact-container{
+    display: flex;
+}
+#contact .input-container{
+    flex: 2;
+}
+#contact .name-email-container,
+#contact .title-container,
+#contact .content-container{
+    margin-bottom: 40px;
+}
+#contact .name-email-container{
+    display: flex;
+    justify-content: space-between;
+}
+.name-container,.email-container{
+    flex: 1;
+}
+.name-container{
+    margin-right: 20px;
+}
+.email-container{
+    margin-left: 20px;
+}
+#contact .contact-info-container{
+    flex: 1;
+}
+#contact-input-content{
+    height: 300px;
+}
+#contact .input-container button{
+    margin-right: 20px;
+    background-repeat: 20px;
+    height: 50px;
+    width: 100%;
+}
+@media(max-width:1000px){
+    .contact-info-container{
+        display: none;
+    }
+}
+
+.contact-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.phone-container{
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+#contact .icon-container{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#contact .icon-container span{
+    font-size: 2rem;
+    color: white;
+}
+.category{
+    margin-left: 30px;
+}
+.category-name{
+    font-size: 1.5rem;
+}
+/* footer */
+footer{
+    height: 100px;
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+@media (max-width:768px) {
+    footer{
+    font-size: 1.5rem;
+    }
+}
